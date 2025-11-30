@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>ndeleh!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>ndeleh!</h1>
+    <p>little experiences for big hearts</p>
+</header>
+
+<div class="ticker">
+    <div class="ticker-inner">
+        🌟 ndeleh AI is coming soon — your personal positivity & social filter assistant 🌟
+    </div>
+</div>
+
+
+<main class="tiles">
+    <div class="tile" id="tile-poetry">
+        <h2>Poetry in Motion</h2>
+        <p>Choose 7 things you love about life and watch them become poetry.</p>
+    </div>
+
+    <div class="tile disabled">
+        <h2>Music For Your Soul</h2>
+        <p class="soon">coming soon</p>
+    </div>
+
+    <div class="tile disabled">
+        <h2>Gentle Blessings</h2>
+        <p class="soon">coming soon</p>
+    </div>
+
+    <div class="tile disabled">
+        <h2>Smiley Mode</h2>
+        <p class="soon">coming soon</p>
+    </div>
+
+
+</main>
+
+<!-- POETRY APP OVERLAY -->
+<div id="poetryOverlay" class="overlay hidden">
+    <!-- Intro -->
+    <div id="poetryIntro" class="intro-screen">
+        <h1 class="introText">by ndeleh</h1>
+    </div>
+
+    <!-- Particles background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Main Poetry App -->
+    <div class="container hidden" id="mainApp">
+        <button id="closePoetry" class="closeBtn">✕</button>
+        <h1>✨ Poetry in Motion ✨</h1>
+        <p>Select your 7 favorite things about life:</p>
+
+        <div id="options"></div>
+
+        <button id="generateBtn" class="glowBtn">Generate Poetry</button>
+
+        <div id="poemSection" class="hidden">
+            <h2>Your Uplifting Poem</h2>
+            <p id="poemText"></p>
+
+            <div class="emoji">😊👍</div>
+
+            <button id="restartBtn" class="glowBtn">Start Again</button>
+            <button id="shareBtn" class="shareBtn">Share Poem</button>
+        </div>
+    </div>
+</div>
+
+<script src="particles.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
